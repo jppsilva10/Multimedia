@@ -1,0 +1,99 @@
+header {
+    background: url("logo.svg") 0% 0%/100% 100%, url("backgr.png") 0% 0%/100% 100%, radial-gradient(ellipse farthest-corner at 25% 65%, #6b6b88bf 1%, #120738 85%);
+    background-repeat: no-repeat;
+    width: 650px;
+    height: 290px;
+
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+
+    border-style:   solid;
+    border-radius: 10px;
+    border-width: 0px;
+    border-color: #0000ff00;
+}
+figure {
+    left: 0%;
+    top: 0%;
+    margin-left:0px;
+    background: url("view1.png");
+    width: 60%;
+    height: 100%;
+    position: relative;
+    animation-name: animImg;
+    animation-duration: 12s;
+    animation-iteration-count:infinite;
+}
+@keyframes animImg
+{
+    20% {background: url("view1.png");}
+    35% {background: url("view2.png");}
+    55% {background: url("view2.png");}
+    70% {background: url("view3.png");}
+    90% {background: url("view3.png");}
+}
+
+section{
+    width: 32%;
+    height: 60%;
+    left: 65%;
+    top:-70%;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    font 1.6vmi helvetica;
+    font-size: 75%;
+    text-align: justify;
+}
+
+header, nav, main{
+    margin-top:1%;
+    width: 650px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+home, history, gallery{
+    width: 30%;
+    height: 100%;
+    background-color: #9784b5;
+    color: black;
+
+    position: relative;
+
+    border-style:   solid;
+    border-radius: 10px;
+    border-width: 0px;
+    border-color: #0000ff00;
+    float:left;
+    text-align: center;
+
+    transition: background-color 0.1s;
+}
+
+home:hover, history:hover, gallery:hover {
+    cursor: pointer;
+    background-color: #bdbbd4;
+}
+home:active, history:active, gallery:active {
+    background-color: #584d6a;
+    color: white;
+}
+
+history{
+    margin-left:5%;
+    margin-right:5%;
+}
+
+main{
+    left: 0%;
+    top: 0%;
+    position: relative;
+    overflow: hidden;
+
+    font 1.6vmi helvetica;
+    font-size: 90%;
+    text-align: justify;
+    width: 800px
+}
